@@ -9,3 +9,6 @@ def to_weird_case(string):
 to_weird_case('This is a test')
 
 #'ThIs Is A TeSt'
+
+
+"Modificare test"
