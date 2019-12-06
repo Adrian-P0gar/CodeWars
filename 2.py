@@ -1,17 +1,20 @@
-def get_sum(a, b):
-    x = 0
-    if a > b:
-        for i in range(b, a):
-            x = x + i
-        return x + a
-    if b > a:
-        for i in range(a, b):
-            x = x + i
-        return x + b
+def sum_range(number1, number2):
+    '''
+    This function return sum of the numbers betwen number1, number2.
+    '''
+    preliminary_range_sum = 0
+    if number1 > number2:
+        for number in range(number2, number1):
+            preliminary_range_sum += number
+        return preliminary_range_sum + number1
+    if number2 > number1:
+        for number in range(number1, number2):
+            preliminary_range_sum += number
+        return preliminary_range_sum + number2
     else:
-        return a
+        return number1
 
 
-print(get_sum(0, -1))
-print(get_sum(1, 2))
-print(get_sum(3, -2))
+print(sum_range(0, -1))
+print(sum_range(1, 2))
+print(sum_range(3, -2))
